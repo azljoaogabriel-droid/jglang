@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JGLang — Linguagem de Programação</title>
+<meta name="description" content="JGLang — uma linguagem de programação em desenvolvimento.">
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#18223d;--text:#f5f7ff;--muted:#aeb8d0;--accent:#6ea8ff;--accent2:#8b7cff;--border:#293657;--code:#090d18}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,var(--bg),#10182c);color:var(--text);line-height:1.6}
+header{border-bottom:1px solid var(--border);background:#0b1020}
+nav{max-width:1050px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:24px;font-weight:800}nav a{color:var(--muted);text-decoration:none;margin-left:18px}nav a:hover{color:var(--text)}
+.hero{max-width:1050px;margin:auto;padding:80px 22px 65px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+.tag{display:inline-block;padding:7px 12px;border:1px solid var(--border);border-radius:999px;color:#cbd7ff;background:var(--panel);font-size:14px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1;margin:18px 0}.gradient{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:19px}.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.button{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;color:white;border:1px solid var(--border);background:var(--panel2)}
+.button.primary{background:var(--accent);color:#07101f;border-color:var(--accent)}
+.code-card{background:var(--code);border:1px solid var(--border);border-radius:16px;overflow:hidden}.code-top{padding:11px 15px;border-bottom:1px solid var(--border);color:var(--muted);font-size:13px}
+pre{margin:0;padding:22px;overflow:auto;color:#dce5ff;font-size:14px}
+section{max-width:1050px;margin:auto;padding:65px 22px}h2{font-size:34px;margin-top:0}.muted{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px}.card h3{margin-top:0}
+.version{display:inline-block;color:#cbd7ff;background:var(--panel2);border:1px solid var(--border);padding:5px 9px;border-radius:8px;font-size:13px;margin-bottom:10px}
+footer{border-top:1px solid var(--border);color:var(--muted);text-align:center;padding:28px 22px}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}.hero{grid-template-columns:1fr;padding-top:55px}.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav>
+<div class="logo">🧠 JGLang</div>
+<div><a href="#sobre">Sobre</a><a href="#recursos">Recursos</a><a href="#exemplo">Exemplo</a><a href="#versao">Versão</a></div>
+</nav></header>
+
+<main>
+<section class="hero">
+<div>
+<span class="tag">Linguagem de programação em desenvolvimento</span>
+<h1>Crie com <span class="gradient">JGLang.</span></h1>
+<p>Uma linguagem de programação criada para aprender, experimentar e construir programas com uma sintaxe própria.</p>
+<div class="buttons"><a class="button primary" href="#exemplo">Ver código</a><a class="button" href="#recursos">Conhecer a JGLang</a></div>
+</div>
+<div class="code-card" id="exemplo">
+<div class="code-top">programa.jgl</div>
+<pre><code>numero a = 10
+numero b = 5
+numero resultado = a + b
+
+se resultado &gt;= 15
+    mostrar "Funcionou!"
+fim</code></pre>
+</div>
+</section>
+
+<section id="sobre"><h2>Sobre a JGLang</h2>
+<p class="muted">A JGLang é um projeto de linguagem de programação em desenvolvimento. O objetivo é criar uma linguagem própria, com comandos simples e recursos que possam crescer junto com o projeto.</p></section>
+
+<section id="recursos"><h2>O que a JGLang já está aprendendo</h2>
+<div class="cards">
+<div class="card"><span class="version">Base</span><h3>🔢 Variáveis e matemática</h3><p class="muted">Variáveis, números e operações matemáticas.</p></div>
+<div class="card"><span class="version">Controle</span><h3>🔀 Condições e repetição</h3><p class="muted">Estruturas como <code>se</code>, <code>senao</code> e <code>repetir</code>.</p></div>
+<div class="card"><span class="version">Criação</span><h3>🧩 Funções e listas</h3><p class="muted">Funções e estruturas para organizar programas.</p></div>
+<div class="card"><span class="version">Hardware</span><h3>⚡ Arduino</h3><p class="muted">Comandos para gerar código destinado ao Arduino.</p></div>
+<div class="card"><span class="version">Interface</span><h3>🖱️ Botões</h3><p class="muted">Comandos JGLang para criar interfaces com elementos como botões.</p></div>
+<div class="card"><span class="version">Futuro</span><h3>🚀 Em evolução</h3><p class="muted">Novos recursos serão adicionados conforme a linguagem evoluir.</p></div>
+</div></section>
+
+<section id="versao"><h2>Versão atual</h2><p class="muted"><strong>JGLang 1.6</strong> — fase de desenvolvimento. O projeto ainda está sendo construído e testado.</p></section>
+</main>
+<footer>JGLang © 2026 — Projeto de linguagem de programação em desenvolvimento.</footer>
+</body>
+</html>
